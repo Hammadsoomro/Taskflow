@@ -2,6 +2,11 @@
   command = "npm run build"
   publish = "dist/spa"
 
+[build.environment]
+  NPM_FLAGS="--no-frozen-lockfile"
+  PNPM_FLAGS="--no-frozen-lockfile"
+
+
 [functions]
   directory = "netlify/functions"
   node_bundler = "esbuild"
